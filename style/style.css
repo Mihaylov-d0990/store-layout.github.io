@@ -6,27 +6,61 @@ a,
 a:active,
 a:visited {
   text-decoration: none;
-  color: #000; }
+  color: #fff; }
 
 body {
-  font-size: 16px; }
+  font-size: 16px;
+  font-family: 'Merriweather', serif; }
 
 /* head */
-.head__content {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 0px; }
-.head__nav {
-  display: flex;
-  align-self: center; }
-  .head__nav nav {
+.head {
+  background: #6384ff; }
+  .head__content {
+    padding-top: 20px; }
+  .head__top {
+    display: flex;
+    column-gap: 20px;
+    padding-bottom: 20px;
+    align-items: center; }
+  .head__logo {
+    font-size: 3em; }
+  .head__search {
+    height: 30px;
+    display: flex;
+    column-gap: 10px;
+    flex-grow: 1; }
+    .head__search input {
+      padding: 0px 10px;
+      font-size: 1em;
+      flex-grow: 1;
+      border: none;
+      outline: none; }
+    .head__search button {
+      padding: 0px 10px;
+      border: none;
+      background-color: #fff; }
+  .head__profile {
     display: flex;
     column-gap: 20px; }
+  .head__nav nav {
+    display: flex;
+    justify-content: space-around;
+    column-gap: 20px; }
+  .head__link {
+    display: flex;
+    align-items: center;
+    padding: 10px 30px;
+    box-sizing: border-box;
+    border-bottom: 2px solid #6384ff;
+    transition: 0.3s; }
+    .head__link:hover {
+      border-bottom: 2px solid #fff;
+      border-radius: 20px 0px 20px 0px; }
 
 /* main */
 .main {
   height: 750px;
-  background-image: url(/images/image.jpg);
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, #1c1b21 100%), url(/images/image.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 53%; }
@@ -47,13 +81,16 @@ body {
     text-align: justify; }
 
 /* foot */
-.foot__content {
-  padding: 20px 0px; }
-.foot__columns {
-  display: flex;
-  justify-content: space-around; }
-.foot__item {
-  font-size: 1.125em; }
+.foot {
+  background: #6384ff;
+  color: #fff; }
+  .foot__content {
+    padding: 20px 0px; }
+  .foot__columns {
+    display: flex;
+    justify-content: space-around; }
+  .foot__item {
+    font-size: 1.125em; }
 
 .title {
   font-size: 5em; }

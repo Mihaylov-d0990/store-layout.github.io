@@ -3,36 +3,96 @@
     margin: 0;
 }
 
+$firstColor: #6384ff;
+$secondColor: #fff;
+
+
 a,
 a:active,
 a:visited {
     text-decoration: none;
-    color: #000;
+    color: $secondColor
 }
 
 $mainFontSize: 16px;
 
 body {
     font-size: $mainFontSize;
+    font-family: 'Merriweather', serif;
 }
 
 /* head */
 
 .head {
+    background: $firstColor;
+
     &__content {
+        padding-top: 20px;
+    }
+
+    &__top {
         display: flex;
-        justify-content: space-between;
-        padding: 20px 0px;
+        column-gap: 20px;
+        padding-bottom: 20px;
+        align-items: center;
+    }
+
+    &__logo {
+        font-size: 3em;
+    }
+
+    &__search {
+        height: 30px;
+        display: flex;
+        column-gap: 10px;
+        flex-grow: 1;
+
+        input {
+            padding: 0px 10px;
+            font-size: 1em;
+            flex-grow: 1;
+            border: none;
+            outline: none;
+        }
+        
+        button {
+            padding: 0px 10px;
+            border: none;
+            background-color: $secondColor;
+        }
+    }
+
+    &__profile {
+        display: flex;
+        column-gap: 20px;
     }
 
     &__nav {
-        display: flex;
-        align-self: center;
 
         nav {
             display: flex;
+            justify-content: space-around;
             column-gap: 20px;
         }
+    }
+
+    &__link {
+        $headColor: rgb(255, 247, 241);
+        $borderRadius: 20px;
+        $borderSize: 2px;
+
+        display: flex;
+        align-items: center;
+        padding: 10px 30px;
+        box-sizing: border-box;
+        border-bottom: $borderSize solid $firstColor;
+        transition: 0.3s;
+
+        &:hover {
+            border-bottom: $borderSize solid $secondColor;
+            border-radius: $borderRadius 0px $borderRadius 0px;
+        }
+
     }
 }
 
@@ -40,7 +100,7 @@ body {
 
 .main {
     height: 750px;
-    background-image: url(/images/image.jpg);
+    background-image: linear-gradient(180deg, rgba(255,255,255,0) 50%, rgba(28,27,33,1) 100%), url(/images/image.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 53%;
@@ -72,6 +132,9 @@ body {
 /* foot */
 
 .foot {
+    background: $firstColor;
+    color: $secondColor;
+
     &__content {
         padding: 20px 0px;
     }
