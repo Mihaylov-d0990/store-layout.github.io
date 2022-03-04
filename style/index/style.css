@@ -59,7 +59,7 @@ body {
 /* main */
 .main {
   height: 750px;
-  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, #1c1b21 100%), url(../images/image.png);
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, #1c1b21 100%), url(../../images/image.png);
   background-repeat: no-repeat;
   background-position: 50% 53%; }
   .main .container {

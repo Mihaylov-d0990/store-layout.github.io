@@ -1,0 +1,153 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+a,
+a:active,
+a:visited {
+  text-decoration: none;
+  color: #fff; }
+
+html {
+  height: 100%; }
+
+body {
+  height: 100%;
+  font-size: 16px;
+  font-family: 'Merriweather', serif; }
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%; }
+
+/* head */
+.head {
+  flex: 0 0 auto; }
+  .head__content {
+    padding-top: 20px; }
+  .head__top {
+    display: flex;
+    column-gap: 20px;
+    padding-bottom: 15px;
+    align-items: center;
+    border-bottom: 2px solid #fff; }
+  .head__logo {
+    font-size: 3em; }
+  .head__search {
+    height: 30px;
+    display: flex;
+    column-gap: 10px;
+    flex-grow: 1; }
+    .head__search input {
+      padding: 0px 10px;
+      font-size: 1em;
+      flex-grow: 1;
+      border: none;
+      outline: none; }
+    .head__search button {
+      padding: 0px 10px;
+      border: none;
+      background-color: #fff; }
+  .head__profile {
+    display: flex;
+    column-gap: 20px; }
+  .head__nav nav {
+    display: flex;
+    justify-content: space-around;
+    column-gap: 20px; }
+  .head__link {
+    display: flex;
+    align-items: center;
+    padding: 10px 30px;
+    box-sizing: border-box;
+    border-bottom: 2px solid #6384ff;
+    transition: 0.3s; }
+    .head__link:hover {
+      border-bottom: 2px solid #fff;
+      border-radius: 20px 0px 20px 0px; }
+
+/* login */
+.login {
+  flex: 1 0 auto;
+  display: flex;
+  align-items: center; }
+  .login .container {
+    display: flex;
+    justify-content: center; }
+  .login__content {
+    background-image: linear-gradient(180deg, #6384ff 0%, rgba(99, 132, 255, 0.7) 100%), url(../../images/image.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+    padding: 40px 30px;
+    color: #fff;
+    border-radius: 3px; }
+  .login__email {
+    align-self: flex-start;
+    padding-left: 20px; }
+  .login__form {
+    width: 100%; }
+    .login__form form {
+      display: flex;
+      flex-direction: column;
+      row-gap: 3px; }
+    .login__form label {
+      display: flex;
+      align-items: center;
+      column-gap: 10px; }
+    .login__form input {
+      height: 35px;
+      border: none;
+      background-color: #fff; }
+      .login__form input[type=text] {
+        border-radius: 20px 20px 0px 0px;
+        outline: none;
+        padding: 0px 20px; }
+      .login__form input[type=submit] {
+        border-radius: 0px 0px 20px 20px;
+        cursor: pointer;
+        transition: 0.3s; }
+        .login__form input[type=submit]:hover {
+          background-color: rgba(255, 255, 255, 0.5); }
+  .login__forget {
+    align-self: start;
+    transition: 0.3s;
+    padding-left: 20px; }
+    .login__forget:hover {
+      opacity: 0.7; }
+  .login__dividing {
+    height: 1px;
+    width: 100%;
+    margin: 20px 0px;
+    background-color: #fff; }
+  .login__text {
+    text-align: justify;
+    width: 350px; }
+
+/* foot */
+.foot {
+  flex: 0 0 auto; }
+  .foot__content {
+    padding: 20px 0px; }
+  .foot__columns {
+    display: flex;
+    justify-content: space-around; }
+  .foot__item {
+    font-size: 1.125em; }
+
+/* blocks */
+.dividing {
+  background: #6384ff;
+  color: #fff;
+  min-height: 139px; }
+
+.container {
+  margin: 0px auto;
+  width: 1100px; }
+
+/*# sourceMappingURL=style.css.map */
